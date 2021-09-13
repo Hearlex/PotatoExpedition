@@ -1,0 +1,394 @@
+{
+	id: "56967E05441FEEBE"
+	group: ""
+	order_index: 1
+	filename: "expeditions"
+	title: "Expeditions"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Enter the Twilight Forest"
+			x: -12.5d
+			y: -5.0d
+			shape: "octagon"
+			size: 2.0d
+			id: "4A64BBFECDEEF7EB"
+			tasks: [{
+				id: "03C8EFA4E0D40B10"
+				type: "advancement"
+				advancement: "twilightforest:root"
+				criterion: ""
+			}]
+		}
+		{
+			x: -14.0d
+			y: -3.5d
+			dependencies: ["4A64BBFECDEEF7EB"]
+			id: "60DF86808BC03F07"
+			tasks: [{
+				id: "72AB89C86E08C7BC"
+				type: "advancement"
+				title: "Defeat the Naga"
+				advancement: "twilightforest:progress_naga"
+				criterion: ""
+			}]
+		}
+		{
+			x: -14.0d
+			y: -2.0d
+			dependencies: ["60DF86808BC03F07"]
+			id: "7B2D4BCD40792C7E"
+			tasks: [{
+				id: "6ADF191416701D0E"
+				type: "advancement"
+				title: "Slay the Lich in his tower"
+				advancement: "twilightforest:progress_lich"
+				criterion: ""
+			}]
+		}
+		{
+			x: -16.0d
+			y: -0.5d
+			description: ["The Minoshroom can be found in the lybyrinths somewhere hidden in the twilight swamp"]
+			dependencies: ["7B2D4BCD40792C7E"]
+			id: "7513F3D7ECDE337F"
+			tasks: [{
+				id: "4D92AA380FE8CE57"
+				type: "advancement"
+				title: "Find and eat the Minoshroom"
+				advancement: "twilightforest:progress_labyrinth"
+				criterion: ""
+			}]
+		}
+		{
+			x: -16.0d
+			y: 1.0d
+			description: ["You can find the Hydra in the Fire Swamp"]
+			dependencies: ["7513F3D7ECDE337F"]
+			id: "31EE00D934D15799"
+			tasks: [{
+				id: "2A82F7FEC14CE261"
+				type: "advancement"
+				title: "Slay the Hydra"
+				advancement: "twilightforest:progress_hydra"
+				criterion: ""
+			}]
+		}
+		{
+			x: -14.0d
+			y: -0.5d
+			description: ["The phantoms are in a stronghold deep within the dark forests. To enter the stronghold, one must possess a trophy which must be placed on the pedestal."]
+			dependencies: ["7B2D4BCD40792C7E"]
+			id: "4CF6654CE063ACD6"
+			tasks: [{
+				id: "611DDB271BD7EC17"
+				type: "advancement"
+				title: "Settle the Knight Phantoms"
+				advancement: "twilightforest:progress_knights"
+				criterion: ""
+			}]
+		}
+		{
+			x: -14.0d
+			y: 1.0d
+			description: [
+				"Find the Dark Tower, solve the puzzles and find the keys. After that fight the Ur-Ghast."
+				"Use the traps by slaying the nearby carminite ghastlings and then by activating it with redstone."
+			]
+			dependencies: ["4CF6654CE063ACD6"]
+			id: "5A89012ABEFA382F"
+			tasks: [{
+				id: "07D0A4000E864E0C"
+				type: "advancement"
+				title: "Defeat the Ur-Ghast"
+				advancement: "twilightforest:progress_ur_ghast"
+				criterion: ""
+			}]
+		}
+		{
+			x: -12.0d
+			y: -0.5d
+			dependencies: ["7B2D4BCD40792C7E"]
+			id: "4778438599510FB1"
+			tasks: [{
+				id: "6C1989B07B7EA35A"
+				type: "advancement"
+				title: "Kill the Alpha Yeti"
+				advancement: "twilightforest:progress_yeti"
+				criterion: ""
+			}]
+		}
+		{
+			x: -12.0d
+			y: 1.0d
+			description: ["You can find her in the Glacier biomes."]
+			dependencies: ["4778438599510FB1"]
+			id: "0EAF04E68751240E"
+			tasks: [{
+				id: "42AF155C1F72D08F"
+				type: "advancement"
+				title: "Defeat the Snow Queen"
+				advancement: "twilightforest:progress_glacier"
+				criterion: ""
+			}]
+		}
+		{
+			x: -14.0d
+			y: 2.5d
+			description: [
+				"You have to go to the Highlands. There you can find a Cloud Cottage"
+				"The Cloud Cottage is full of Giants, also some of them keep a giant pickaxe in their hands. Take it!"
+				"After that somewhere below the Cloud you must find a Troll Cave. Deep within the Troll Cave there is an Obsidian vault."
+				"Using the giant pickaxe break in, then take the lamp of cinders from the chests."
+			]
+			dependencies: [
+				"31EE00D934D15799"
+				"5A89012ABEFA382F"
+				"0EAF04E68751240E"
+			]
+			id: "503C66DE31EA00E3"
+			tasks: [
+				{
+					id: "7E6C155888206194"
+					type: "advancement"
+					title: "Find the troll cave and get the Lamp of Cinders"
+					advancement: "twilightforest:progress_troll"
+					criterion: ""
+				}
+				{
+					id: "25DC99BF031322B3"
+					type: "advancement"
+					title: "Get the pickaxe from a giant miner"
+					advancement: "twilightforest:giants"
+					criterion: ""
+				}
+			]
+		}
+		{
+			icon: "atum:scarab"
+			x: -7.5d
+			y: -5.0d
+			shape: "octagon"
+			description: ["Craft a Scarab, build the portal and then jump throgh it!"]
+			size: 2.0d
+			id: "44095EA69B3E3F73"
+			tasks: [
+				{
+					id: "1E9AFE0BB3EB6788"
+					type: "advancement"
+					title: "Get into the Atum Dimension"
+					advancement: "atum:core/journeyintothesands"
+					criterion: ""
+				}
+				{
+					id: "477DC02ED6F7F4FF"
+					type: "item"
+					item: "atum:scarab"
+					consume_items: false
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: -3.5d
+			dependencies: ["44095EA69B3E3F73"]
+			id: "3542C5DC69513F06"
+			tasks: [{
+				id: "399BE044B8B14195"
+				type: "advancement"
+				title: "Find a pyramid!"
+				advancement: "atum:core/pyramidscheme"
+				criterion: ""
+			}]
+		}
+		{
+			x: -9.0d
+			y: -2.0d
+			dependencies: ["3542C5DC69513F06"]
+			id: "3A728A7451CD63B0"
+			tasks: [{
+				id: "790C901B3BA82DE2"
+				type: "advancement"
+				title: "Kill the pharaoh"
+				advancement: "atum:core/kingslayer"
+				criterion: ""
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.5d
+			description: ["Dirty tools can be dropped into the water for cleaning."]
+			dependencies: ["44095EA69B3E3F73"]
+			id: "5F2AA59576180FDF"
+			tasks: [{
+				id: "22C143C095F19FEA"
+				type: "advancement"
+				title: "Wash off the dirt"
+				advancement: "atum:core/justlikenew"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Find a gatekeeper"
+			x: -2.0d
+			y: -5.0d
+			shape: "octagon"
+			description: [
+				"The gatekeeper lives in the overworld. He gives you a journal in exchange for a book."
+				"Look around his stuff. You might find something useful."
+			]
+			size: 2.0d
+			id: "10E3480ECF1DFEAC"
+			tasks: [
+				{
+					id: "0CCD72E49540F569"
+					type: "item"
+					item: "blue_skies:blue_journal"
+					consume_items: false
+				}
+				{
+					id: "13456ACB48385B3C"
+					type: "item"
+					item: {
+						id: "blue_skies:zeal_lighter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: false
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -3.5d
+			dependencies: ["10E3480ECF1DFEAC"]
+			id: "196AF74BDE37EC91"
+			tasks: [{
+				id: "198F3286B3D22407"
+				type: "advancement"
+				title: "Go to Everdawn"
+				advancement: "blue_skies:everdawn/enter"
+				criterion: ""
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.0d
+			description: ["You better look around for resources. This world works differently."]
+			dependencies: ["196AF74BDE37EC91"]
+			id: "65ED32F67E16E7E0"
+			tasks: [
+				{
+					id: "59FA716541E1DC56"
+					type: "advancement"
+					title: "Get materials and gear up"
+					advancement: "blue_skies:everdawn/get_wood"
+					criterion: ""
+				}
+				{
+					id: "4541AE4DD309FB7E"
+					type: "item"
+					item: "blue_skies:moonstone_shard"
+					consume_items: false
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			dependencies: ["65ED32F67E16E7E0"]
+			id: "1A1DC3D2AF036A1C"
+			tasks: [{
+				id: "14110D18D7635780"
+				type: "advancement"
+				title: "Kill the alchemist"
+				advancement: "blue_skies:everdawn/kill_alchemist"
+				criterion: ""
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.0d
+			dependencies: ["1A1DC3D2AF036A1C"]
+			id: "1B62D31B993C1BB0"
+			tasks: [{
+				id: "7C4E032277F0D240"
+				type: "advancement"
+				title: "Slay the Arachnarch"
+				advancement: "blue_skies:everdawn/kill_arachnarch"
+				criterion: ""
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			dependencies: ["10E3480ECF1DFEAC"]
+			id: "3DCA12DE521EB31F"
+			tasks: [{
+				id: "0C60E4AA4D42D169"
+				type: "advancement"
+				title: "Go to Everbright"
+				advancement: "blue_skies:everbright/enter"
+				criterion: ""
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			description: ["This world is different as well. You can use your gear in both everdawn or everbright, but here you can gather some additional stuff."]
+			dependencies: ["3DCA12DE521EB31F"]
+			id: "04F05F62DC9D6C21"
+			tasks: [
+				{
+					id: "77632FA822A4B5A1"
+					type: "advancement"
+					title: "Gear up!"
+					advancement: "blue_skies:everbright/get_wood"
+					criterion: ""
+				}
+				{
+					id: "5A908FE756DA889D"
+					type: "item"
+					item: "blue_skies:ventium_ingot"
+					consume_items: false
+				}
+				{
+					id: "66BF52B2E96E0037"
+					type: "item"
+					item: "blue_skies:falsite_ingot"
+					consume_items: false
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			dependencies: ["04F05F62DC9D6C21"]
+			id: "7F383ACA73B6547C"
+			tasks: [{
+				id: "25D462B737416F21"
+				type: "advancement"
+				title: "Kill the summoner"
+				advancement: "blue_skies:everbright/kill_summoner"
+				criterion: ""
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["7F383ACA73B6547C"]
+			id: "0A1CF8D0C59BF2DA"
+			tasks: [{
+				id: "0AD1D7D8D3B9EF87"
+				type: "advancement"
+				title: "Slay the Starlight Crusher"
+				advancement: "blue_skies:everbright/kill_starlit_crusher"
+				criterion: ""
+			}]
+		}
+	]
+}

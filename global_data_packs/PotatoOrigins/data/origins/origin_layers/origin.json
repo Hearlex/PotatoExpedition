@@ -1,0 +1,7 @@
+{
+    "order":1,
+    "replace": true,
+    "origins": [
+        "humans:human"
+    ]
+}

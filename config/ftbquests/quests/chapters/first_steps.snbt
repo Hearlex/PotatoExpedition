@@ -1,0 +1,274 @@
+{
+	id: "159AF282EC8CFD00"
+	group: ""
+	order_index: 0
+	filename: "first_steps"
+	title: "First Steps"
+	icon: {
+		id: "minecraft:leather_boots"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: -8.0d
+			description: [
+				"Getting stick is important. Get started by punching leaves or finding sticks on the ground."
+				"If you start in the nether try finding crimson or warped roots. Two of them can make sticks in that hellish situation"
+			]
+			id: "2AC70FA1DA5325B5"
+			tasks: [{
+				id: "6EB51B0AFA1BBAC0"
+				type: "advancement"
+				title: "Getting Stick"
+				icon: "minecraft:stick"
+				advancement: "notreepunching:story/find_sticks"
+				criterion: ""
+			}]
+		}
+		{
+			x: -1.5d
+			y: -8.0d
+			description: [
+				"Getting started is much harder now."
+				"You should start getting some"
+				"flint instead of cobblestone"
+				"then use that flint against"
+				"something hard"
+			]
+			id: "0C020717EE0B8409"
+			tasks: [{
+				id: "3CF2E6FD5EE2090B"
+				type: "advancement"
+				title: "Getting Flint"
+				icon: "minecraft:flint"
+				advancement: "notreepunching:story/find_flint"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7A9A48B6B7DD7FFE"
+				type: "item"
+				title: "Have some more!"
+				icon: "minecraft:flint"
+				item: "minecraft:flint"
+				count: 4
+			}]
+		}
+		{
+			x: -0.5d
+			y: -6.5d
+			description: ["The first item you will require. You can use this to make string out of vegetation!"]
+			dependencies: [
+				"0C020717EE0B8409"
+				"2AC70FA1DA5325B5"
+			]
+			id: "0E16FF0612BE13C4"
+			tasks: [{
+				id: "21BD9060891D0293"
+				type: "item"
+				item: {
+					id: "notreepunching:flint_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+				only_from_crafting: false
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.0d
+			description: ["Use your knife with some kind of vegetation. It should make fiber from which you can create string."]
+			dependencies: ["0E16FF0612BE13C4"]
+			id: "73B3AC4F60B83DC1"
+			tasks: [{
+				id: "3787C1BBC5BB689E"
+				type: "advancement"
+				title: "Getting fiber, making string"
+				advancement: "notreepunching:story/plant_fiber"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Make your first tools"
+			x: -0.5d
+			y: -3.5d
+			description: [
+				"First use the string, flint and stick to create a flint axe. Use that to chop wood, and in your crafting grid with logs to create planks."
+				"Using planks make your first crafting table, and use that to craft a flint pickaxe. Remember you can't make most of the wooden and stone tools so use this until you find enough iron."
+			]
+			dependencies: ["73B3AC4F60B83DC1"]
+			id: "495807CD3802BB94"
+			tasks: [
+				{
+					id: "2A1C0BBED8B76650"
+					type: "item"
+					item: {
+						id: "notreepunching:flint_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "6B2DADBB73EE47B0"
+					type: "item"
+					item: {
+						id: "notreepunching:flint_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: false
+				}
+			]
+		}
+		{
+			title: "Making a campfire"
+			x: -2.0d
+			y: -5.0d
+			description: [
+				"To make a campfire you need a fire starter. This item let's you start fires after a few tries. "
+				"If you throw a wooden fuel item (log or plank) and three pieces of kindling (sticks, saplings, leaves or strings) and then ignite it with your fire starter, it will create a campfire!"
+			]
+			dependencies: ["73B3AC4F60B83DC1"]
+			id: "2FFD1DC8C985B066"
+			tasks: [{
+				id: "44FDA6B4B4C170AB"
+				type: "item"
+				item: {
+					id: "notreepunching:fire_starter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "Starting with Pottery"
+			x: 3.5d
+			y: -8.0d
+			description: [
+				"Creating ceramics is easy. Place down a clay block, then use a clay tool on it."
+				"You can click the clay more than once. Each time it becomes something different. After that pick it up, and fire it using a furnace or a campfire"
+			]
+			id: "4C4B4D31ED81047E"
+			tasks: [
+				{
+					id: "09FC55B9FEAB7C0F"
+					type: "item"
+					item: {
+						id: "notreepunching:clay_tool"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "679DC5804C793445"
+					type: "item"
+					item: "minecraft:clay"
+					consume_items: false
+				}
+				{
+					id: "61A8078EA25AFE0C"
+					type: "advancement"
+					advancement: "notreepunching:story/use_clay_tool"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -6.0d
+			dependencies: ["4C4B4D31ED81047E"]
+			id: "50D18D4E26947785"
+			tasks: [{
+				id: "603C3CBC8E23B42E"
+				type: "item"
+				item: {
+					id: "notreepunching:ceramic_large_vessel"
+					Count: 1b
+					tag: {
+						inventory: {
+							Size: 15
+							Items: [ ]
+						}
+					}
+					ForgeCaps: {
+						Parent: {
+							Size: 15
+							Items: [ ]
+						}
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: -6.5d
+			dependencies: ["4C4B4D31ED81047E"]
+			id: "4C4FDA91DFB5A8F8"
+			tasks: [{
+				id: "3B6CE15FA6F2A9D7"
+				type: "item"
+				item: {
+					id: "notreepunching:ceramic_small_vessel"
+					Count: 1b
+					tag: {
+						inventory: {
+							Size: 9
+							Items: [ ]
+						}
+					}
+					ForgeCaps: {
+						Parent: {
+							Size: 9
+							Items: [ ]
+						}
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: -6.5d
+			dependencies: ["4C4B4D31ED81047E"]
+			id: "4A57172BEAC54D6F"
+			tasks: [{
+				id: "1440542372184552"
+				type: "item"
+				item: "notreepunching:ceramic_bucket"
+				consume_items: false
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.0d
+			dependencies: ["4C4B4D31ED81047E"]
+			id: "1FF5844733F41D16"
+			tasks: [{
+				id: "1BFDDECCD4D93F51"
+				type: "item"
+				item: "minecraft:flower_pot"
+				consume_items: false
+			}]
+		}
+	]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Axilex",
+      "uniqueId": "940dd336-a047-4621-8b59-1d8a006a6748"
+    },
+    "time": 1628699595133,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/ul1VeCgRES"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Axilex",
+      "uniqueId": "51d6edfc-a5fb-3f40-b3a8-c812b4bb1a3d"
+    },
+    "time": 1628435274695,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/w8JWnkF1KO"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Axilex",
+      "uniqueId": "51d6edfc-a5fb-3f40-b3a8-c812b4bb1a3d"
+    },
+    "time": 1628327806848,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/miEKpGUUyg"
+    }
+  }
+]

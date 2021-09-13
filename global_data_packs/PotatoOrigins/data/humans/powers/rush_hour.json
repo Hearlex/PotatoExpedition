@@ -1,0 +1,21 @@
+{
+    "name":"Rush Hour",
+    "description":"While in the mines, it's always a need to mine faster and so you do.",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -10,
+    "max_stacks": 60,
+    "duration_per_stack": 20,
+    "effect": {
+        "effect": "minecraft:haste",
+        "amplifier": 1,
+        "duration": 60
+    },
+    "condition": {
+        "type": "origins:on_block",
+        "block_condition": {
+            "type": "origins:height",
+            "comparison": "<=",
+            "compare_to": 60
+        }
+    }
+}

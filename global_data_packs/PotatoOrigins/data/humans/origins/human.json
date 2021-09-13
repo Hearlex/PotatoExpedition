@@ -1,0 +1,8 @@
+{
+    "icon":"minecraft:player_head",
+    "order":1,
+    "impact":1,
+    "name":"Human",
+    "description":"Basic humanoid. You can enjoy all the default traits as you would in any other game, but you can also choose classes, which grant you some kind of bonuses."
+    
+}

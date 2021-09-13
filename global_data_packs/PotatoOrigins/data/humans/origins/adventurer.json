@@ -1,0 +1,11 @@
+{
+    "icon":"minecraft:diamond_sword",
+    "order":1,
+    "impact":1,
+    "name":"Adventurer",
+    "description":"You live for the thrill of adventure, barely surviving, mostly exploring!",
+    "powers": [
+        "humans:second_wind"
+    ]
+    
+}

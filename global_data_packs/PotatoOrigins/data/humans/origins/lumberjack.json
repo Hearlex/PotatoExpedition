@@ -1,0 +1,11 @@
+{
+    "icon":"minecraft:diamond_axe",
+    "order":2,
+    "impact":1,
+    "name":"Lumberjack",
+    "description":"Cutting down trees is all you live for. You grew kinda good at it!",
+    "powers": [
+        "humans:crafting_wood"
+    ]
+    
+}

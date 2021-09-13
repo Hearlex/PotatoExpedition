@@ -1,0 +1,11 @@
+{
+    "icon":"minecraft:diamond_pickaxe",
+    "order":3,
+    "impact":1,
+    "name":"Miner",
+    "description":"You live in the mines. Having all those ores and riches, that's what makes your day!",
+    "powers": [
+        "humans:rush_hour"
+    ]
+    
+}

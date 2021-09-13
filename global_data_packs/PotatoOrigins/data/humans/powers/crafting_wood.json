@@ -1,0 +1,133 @@
+{
+    "name":"Crafting Wood",
+    "description":"You are so proficient with cutting up some type of trees that you don't even need an axe or saw to make some planks.",
+    "type": "origins:multiple",
+    "oakcraft": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "humans:lumberjack/crafting_wood",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:oak_log"
+                }
+            ],
+            "result": {
+                "item": "minecraft:oak_planks",
+                "count": 2
+            }
+        }
+    },
+    "sprucecraft": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "humans:lumberjack/crafting_wood",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:spruce_log"
+                }
+            ],
+            "result": {
+                "item": "minecraft:spruce_planks",
+                "count": 2
+            }
+        }
+    },
+    "birchcraft": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "humans:lumberjack/crafting_wood",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:birch_log"
+                }
+            ],
+            "result": {
+                "item": "minecraft:birch_planks",
+                "count": 2
+            }
+        }
+    },
+    "junglecraft": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "humans:lumberjack/crafting_wood",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:jungle_log"
+                }
+            ],
+            "result": {
+                "item": "minecraft:jungle_planks",
+                "count": 2
+            }
+        }
+    },
+    "acaciacraft": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "humans:lumberjack/crafting_wood",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:acacia_log"
+                }
+            ],
+            "result": {
+                "item": "minecraft:acacia_planks",
+                "count": 2
+            }
+        }
+    },
+    "dark_oakcraft": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "humans:lumberjack/crafting_wood",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:dark_oak_log"
+                }
+            ],
+            "result": {
+                "item": "minecraft:dark_oak_planks",
+                "count": 2
+            }
+        }
+    },
+    "crimsoncraft": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "humans:lumberjack/crafting_wood",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:crimson_stem"
+                }
+            ],
+            "result": {
+                "item": "minecraft:crimson_planks",
+                "count": 2
+            }
+        }
+    },
+    "warpedcraft": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "humans:lumberjack/crafting_wood",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:warped_stem"
+                }
+            ],
+            "result": {
+                "item": "minecraft:warped_planks",
+                "count": 2
+            }
+        }
+    }
+}

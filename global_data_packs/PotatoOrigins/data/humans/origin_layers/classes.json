@@ -1,0 +1,17 @@
+{
+    "name":"Classes",
+    "order":2,
+    "origins": [
+        {
+            "condition":{
+                "type":"origins:origin",
+                "origin": "humans:human"
+            },
+            "origins":[
+                "humans:adventurer",
+                "humans:lumberjack",
+                "humans:miner"
+            ]
+        }
+    ]
+}
